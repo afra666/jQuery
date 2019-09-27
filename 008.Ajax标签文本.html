@@ -1,0 +1,14 @@
+<script src="jquery-1.11.1.min.js"></script>
+<script>
+    $(function () {
+        $("button").click(function(){
+            $.ajax({url:"b.txt",success:function(result){
+                    $("#div1").html(result);
+
+                }});
+            alert($("#div1").text())
+        });
+    });
+</script>
+<button>go</button>
+<div id="div1"></div>
